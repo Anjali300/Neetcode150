@@ -26,7 +26,7 @@ The space complexity is O(1), as the algorithm uses a constant amount of extra s
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-        vector<int>::iterator it;
+        vector<int>::iterator it; // Iterator used to store the position // of searched element
         it = find(nums.begin(),nums.end(),target);
         if(it != nums.end()){
             return it-nums.begin();
