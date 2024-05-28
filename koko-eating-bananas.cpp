@@ -44,9 +44,10 @@ public:
     int minEatingSpeed(vector<int>& piles, int h) {
         int left = 1;
         int right = *max_element(piles.begin(),piles.end());
-        int sum = 0;
+       
         while(left<right){
-            int rate = left+(right-left)/2; /// finding the mid value 
+            int rate = left+(right-left)/2;/// finding the mid value 
+            long long sum = 0;
             for(auto s : piles){
                 sum = sum+ ceil((float)s/rate);  // getting the sum dividing the mid
             }
