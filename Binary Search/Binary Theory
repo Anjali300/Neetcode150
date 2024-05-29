@@ -1,0 +1,22 @@
+Binary search ---
+
+Binary Search Algorithm is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. 
+The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N). 
+
+- To apply Binary Search algorithm:
+
+The data structure must be sorted.
+Access to any element of the data structure takes constant time.
+
+
+Compare the middle element of the search space with the key. 
+If the key is found at middle element, the process is terminated.
+If the key is not found at middle element, choose which half will be used as the next search space.
+If the key is smaller than the middle element, then the left side is used for next search. left = mid+1
+If the key is larger than the middle element, then the right side is used for next search. right = mid-1
+This process is continued until the key is found or the total search space is exhausted.
+
+The Binary Search Algorithm can be implemented in the following two ways
+
+Iterative Binary Search Algorithm
+Recursive Binary Search Algorithm
