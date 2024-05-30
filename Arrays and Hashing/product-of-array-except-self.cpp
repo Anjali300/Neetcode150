@@ -25,3 +25,28 @@ public:
 
     }
 };
+
+
+
+Another way ---
+
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+        //Forward product
+        vector<int> answer(nums.size());
+        answer[0] = 1;
+        for(int i = 1; i < nums.size(); i++){
+            answer[i] = answer[i-1] * nums[i-1];
+        }
+
+        //Backward product
+        int product = 1;
+        for(int i = nums.size() - 1; i >= 0; i--){
+            answer[i] = product * answer[i];
+            product = product * nums[i];
+        }
+        return answer;
+
+    }
+};
