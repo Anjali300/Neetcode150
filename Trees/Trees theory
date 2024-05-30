@@ -84,3 +84,8 @@ If we do not find any node whose value is equal to target, then the value is not
   -- Finding the height of the tree
   -- Find level of a node in a Binary tree
   -- Finding the size of the entire tree
+
+
+
+## Degree of a Node
+The degree of a node is the total number of branches of that node
