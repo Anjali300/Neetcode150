@@ -89,3 +89,11 @@ If we do not find any node whose value is equal to target, then the value is not
 
 ## Degree of a Node
 The degree of a node is the total number of branches of that node
+
+
+## Tree Applications
+ - Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.
+ - Heap is a kind of tree that is used for heap sort.
+ - A modified version of a tree called Tries is used in modern routers to store routing information.
+ - Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data
+ - Compilers use a syntax tree to validate the syntax of every program you write.
