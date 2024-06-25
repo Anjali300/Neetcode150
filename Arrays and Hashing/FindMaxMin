@@ -1,0 +1,12 @@
+/*
+Write a function that takes a list of integers and returns a new list containing two elements: the maximum and the minimum value in the input list.
+*/
+
+vector<int> findMaxMin(vector<int>& myList) {
+    vector<int> v;
+    int maximum_element = *max_element(myList.begin(),myList.end());
+    int minimum_element = *min_element(myList.begin(),myList.end());
+    v.push_back(maximum_element);
+    v.push_back(minimum_element);
+    return v;
+}
